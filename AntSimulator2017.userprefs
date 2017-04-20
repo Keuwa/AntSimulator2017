@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/Simulation/AbstractSimulation.cs">
+    <Files>
+      <File FileName="AntSimulator2017/Program.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Abstract/Character/Character.cs" Line="5" Column="9" />
+      <File FileName="AntSimulator2017Abstract/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Abstract/Strategy/IFightingStrategy.cs" Line="8" Column="1" />
+      <File FileName="AntSimulator2017Abstract/Strategy/IMovementStrategy.cs" Line="8" Column="1" />
+      <File FileName="AntSimulator2017Abstract/Character/Ant.cs" Line="7" Column="2" />
+      <File FileName="AntSimulator2017Abstract/EmptyInterface.cs" Line="6" Column="3" />
+      <File FileName="AntSimulator2017Abstract/AbstractObservable.cs" Line="15" Column="34" />
+      <File FileName="AntSimulator2017Abstract/AbstractObserver.cs" Line="3" Column="9" />
+      <File FileName="AntSimulator2017Abstract/Environement/AbstractEnvironement.cs" Line="9" Column="3" />
+      <File FileName="AntSimulator2017Abstract/Environement/AbstractArea.cs" Line="9" Column="32" />
+      <File FileName="AntSimulator2017Abstract/Item/Item.cs" Line="6" Column="3" />
+      <File FileName="AntSimulator2017Abstract/Simulation/AbstractSimulation.cs" Line="8" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AntSimulator2017 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

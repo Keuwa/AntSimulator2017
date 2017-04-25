@@ -1,0 +1,1 @@
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.csproj.CoreCompileInputs.cache

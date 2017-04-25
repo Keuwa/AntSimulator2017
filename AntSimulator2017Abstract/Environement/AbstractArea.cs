@@ -6,6 +6,5 @@ namespace AntSimulator2017Abstract
 	public abstract class AbstractArea:AbstractObserver
 	{
 		List<Item> itemList;
-		List<Character> characterList;
 	}
 }

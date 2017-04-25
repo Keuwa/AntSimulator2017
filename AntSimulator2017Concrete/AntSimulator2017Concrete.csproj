@@ -30,12 +30,16 @@
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Character\Ant.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
       <Project>{4FC23F7D-20C0-4310-8A05-FB0FB0B6067D}</Project>
       <Name>AntSimulator2017Abstract</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Character\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

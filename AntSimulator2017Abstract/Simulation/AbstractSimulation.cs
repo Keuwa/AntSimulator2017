@@ -1,8 +1,10 @@
 ﻿using System;
-namespace AntSimulator2017Abstract
+using AntSimulator2017Abstract;
+
+namespace AntSimulator2017Concrete
 {
 	public abstract class AbstractSimulation
 	{
-		Environment environnement;
+		AbstractEnvironement env;
 	}
 }

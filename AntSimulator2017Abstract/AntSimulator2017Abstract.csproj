@@ -32,13 +32,14 @@
     <Compile Include="Strategy\IFightingStrategy.cs" />
     <Compile Include="Strategy\IMovementStrategy.cs" />
     <Compile Include="Character\Character.cs" />
-    <Compile Include="Character\Ant.cs" />
     <Compile Include="AbstractObserver.cs" />
     <Compile Include="AbstractObservable.cs" />
     <Compile Include="Environement\AbstractEnvironement.cs" />
     <Compile Include="Environement\AbstractArea.cs" />
     <Compile Include="Item\Item.cs" />
     <Compile Include="Simulation\AbstractSimulation.cs" />
+    <Compile Include="Utils\Position.cs" />
+    <Compile Include="Base\Base.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Strategy\" />
@@ -46,6 +47,8 @@
     <Folder Include="Environement\" />
     <Folder Include="Item\" />
     <Folder Include="Simulation\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Base\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

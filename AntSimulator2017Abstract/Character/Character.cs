@@ -2,12 +2,12 @@
 
 namespace AntSimulator2017Abstract
 {
-	public abstract class Character:AbstractObserver,IFightingStrategy,IMovementStrategy
+	public abstract class Character:AbstractObserver
 	{
-		private int lifePoint;
-		private String name;
-
-		public abstract void fight();
-		public abstract void move();
+        int lifePoint { get; set; }
+        String name { get; set; }
+        IFightingStrategy figthingStrategy { get; set; }
+        IMovementStrategy movementStrategy { get; set; }
+        Position pos { get; set; }
 	}
 }

@@ -5,6 +5,7 @@ namespace AntSimulator2017Abstract
 {
 	public abstract class AbstractEnvironement:AbstractObservable
 	{
-		List<AbstractArea> areas;
+        AbstractArea [][] map {get;set;}
+        List <Base> bases {get;set;}
 	}
 }

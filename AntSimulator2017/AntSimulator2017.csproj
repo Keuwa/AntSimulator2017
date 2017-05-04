@@ -40,6 +40,10 @@
       <Project>{826CD593-BAC4-4C56-A831-82327C81001D}</Project>
       <Name>AntSimulator2017Concrete</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
+      <Project>{4FC23F7D-20C0-4310-8A05-FB0FB0B6067D}</Project>
+      <Name>AntSimulator2017Abstract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

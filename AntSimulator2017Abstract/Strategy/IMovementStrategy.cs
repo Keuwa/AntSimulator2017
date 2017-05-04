@@ -1,4 +1,4 @@
-﻿namespace AntSimulator2017Abstract
+﻿namespace AntSimulator2017Abstract.Strategy
 {
 	public interface IMovementStrategy
 	{

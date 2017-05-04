@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace AntSimulator2017Abstract
+namespace AntSimulator2017Abstract.Environement
 {
 	public abstract class AbstractArea:AbstractObserver
 	{

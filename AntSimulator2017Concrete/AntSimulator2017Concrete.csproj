@@ -28,9 +28,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Character\Ant.cs" />
+    <Compile Include="Environement\Character\Ant.cs" />
+    <Compile Include="Environement\AntHill.cs" />
+    <Compile Include="Environement\AntWorld.cs" />
+    <Compile Include="AntSimulation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
@@ -39,7 +41,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Character\" />
+    <Folder Include="Environement\" />
+    <Folder Include="Environement\Character\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

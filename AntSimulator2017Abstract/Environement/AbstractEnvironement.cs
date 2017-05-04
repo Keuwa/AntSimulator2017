@@ -1,11 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace AntSimulator2017Abstract
+namespace AntSimulator2017Abstract.Environement
 {
 	public abstract class AbstractEnvironement:AbstractObservable
 	{
-        AbstractArea [][] map {get;set;}
-        List <Base> bases {get;set;}
+        public AbstractArea [][] map {get;set;}
+        public List <Base> bases {get;set;}
+
+        public abstract void simulate();
+
+        /// <summary>
+        /// Gets the stats. Try to make it better
+        /// </summary>
+        /// <returns>The stats.</returns>
+        public abstract string getStats();
 	}
 }

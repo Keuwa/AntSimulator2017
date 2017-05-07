@@ -29,8 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy\IFightingStrategy.cs" />
-    <Compile Include="Strategy\IMovementStrategy.cs" />
     <Compile Include="AbstractObserver.cs" />
     <Compile Include="AbstractObservable.cs" />
     <Compile Include="Environement\AbstractEnvironement.cs" />
@@ -38,12 +36,13 @@
     <Compile Include="Simulation\AbstractSimulation.cs" />
     <Compile Include="Utils\Position.cs" />
     <Compile Include="Environement\AbstractAccess.cs" />
-    <Compile Include="Environement\Character.cs" />
     <Compile Include="Environement\Base.cs" />
-    <Compile Include="Environement\Item.cs" />
+    <Compile Include="Character\Character.cs" />
+    <Compile Include="Character\AbstractCharacterFactory.cs" />
+    <Compile Include="Item\AbstractItem.cs" />
+    <Compile Include="Item\AbstractItemFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Strategy\" />
     <Folder Include="Environement\" />
     <Folder Include="Item\" />
     <Folder Include="Simulation\" />

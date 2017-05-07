@@ -1,13 +1,14 @@
 ﻿using System;
 
-namespace AntSimulator2017Abstract
+namespace AntSimulator2017Abstract.Character
 {
-	public abstract class Character:AbstractObserver
+	public abstract class Character
 	{
-        int lifePoint { get; set; }
-        String name { get; set; }
-        IFightingStrategy figthingStrategy { get; set; }
-        IMovementStrategy movementStrategy { get; set; }
-        Position pos { get; set; }
+        protected double lifePoint { get; set; }
+        protected int perception { get; set; }
+        protected int hungry { get; set; }
+        protected int movementSpeed { get; set; }
+        protected String name { get; set; }
+        protected Position position { get; set; }
 	}
 }

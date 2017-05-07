@@ -1,22 +1,10 @@
 ﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/Strategy/IMovementStrategy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/Character/Character.cs">
     <Files>
-      <File FileName="AntSimulator2017Abstract/Environement/Item.cs" Line="7" Column="14" />
-      <File FileName="AntSimulator2017Concrete/AntSimulation.cs" Line="18" Column="94" />
-      <File FileName="AntSimulator2017Abstract/Simulation/AbstractSimulation.cs" Line="14" Column="39" />
-      <File FileName="AntSimulator2017/Program.cs" Line="22" Column="1" />
-      <File FileName="AntSimulator2017Concrete/Environement/Character/Ant.cs" Line="23" Column="58" />
-      <File FileName="AntSimulator2017Abstract/Environement/AbstractEnvironement.cs" Line="8" Column="15" />
-      <File FileName="AntSimulator2017Concrete/Environement/AntHill.cs" Line="21" Column="9" />
-      <File FileName="AntSimulator2017Concrete/Environement/AntWorld.cs" Line="17" Column="23" />
-      <File FileName="AntSimulator2017Abstract/Environement/Base.cs" Line="7" Column="37" />
-      <File FileName="AntSimulator2017Abstract/Environement/AbstractArea.cs" Line="7" Column="3" />
-      <File FileName="AntSimulator2017Abstract/Environement/AbstractAccess.cs" Line="9" Column="16" />
-      <File FileName="AntSimulator2017Abstract/Environement/Character.cs" Line="12" Column="45" />
-      <File FileName="AntSimulator2017Abstract/AbstractObserver.cs" Line="7" Column="3" />
-      <File FileName="AntSimulator2017Abstract/AbstractObservable.cs" Line="14" Column="26" />
-      <File FileName="AntSimulator2017Abstract/Strategy/IFightingStrategy.cs" Line="8" Column="1" />
-      <File FileName="AntSimulator2017Abstract/Strategy/IMovementStrategy.cs" Line="1" Column="44" />
+      <File FileName="AntSimulator2017Abstract/Utils/Position.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Abstract/Item/AbstractItem.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Abstract/Item/AbstractItemFactory.cs" Line="11" Column="6" />
+      <File FileName="AntSimulator2017Abstract/Character/Character.cs" Line="14" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

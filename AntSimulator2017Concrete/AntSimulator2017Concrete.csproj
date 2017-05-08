@@ -63,6 +63,11 @@
     <Compile Include="mission\ProtectAntHill.cs" />
     <Compile Include="mission\Patrol.cs" />
     <Compile Include="mission\BringFood.cs" />
+    <Compile Include="mission\step\CreateEgg.cs" />
+    <Compile Include="mission\step\Discover.cs" />
+    <Compile Include="mission\step\Shifting.cs" />
+    <Compile Include="mission\step\AwaitStep.cs" />
+    <Compile Include="mission\step\BringBackItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">

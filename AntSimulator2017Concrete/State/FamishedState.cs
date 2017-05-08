@@ -12,7 +12,7 @@ namespace AntSimulator2017Concrete.State
 
         public void updateCharacterState(AntSimulator2017Abstract.Character.Character context, IState replacementState)
         {
-            throw new NotImplementedException();
+            context.state = replacementState;
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System;
 namespace AntSimulator2017Abstract.Item
 {
-    public class AbstractItem
+    public abstract class AbstractItem
     {
-        public AbstractItem()
-        {
-        }
+
+        public abstract string name { get;}
+        public int turnDuration { get; set; }
+
     }
 }

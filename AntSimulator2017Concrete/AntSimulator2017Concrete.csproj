@@ -49,6 +49,13 @@
     <Compile Include="State\SatedState.cs" />
     <Compile Include="State\ConfidentState.cs" />
     <Compile Include="State\DangerState.cs" />
+    <Compile Include="item\PheromonesItem.cs" />
+    <Compile Include="item\SweetFruitItem.cs" />
+    <Compile Include="item\FruitItem.cs" />
+    <Compile Include="item\VerySweetFruitItem.cs" />
+    <Compile Include="item\PheromonesFactory.cs" />
+    <Compile Include="item\SweetFruitItemFactory.cs" />
+    <Compile Include="item\VerySweetItemFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
@@ -60,6 +67,7 @@
     <Folder Include="Character\" />
     <Folder Include="Strategy\" />
     <Folder Include="State\" />
+    <Folder Include="item\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

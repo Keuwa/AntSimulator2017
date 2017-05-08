@@ -29,8 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AbstractObserver.cs" />
-    <Compile Include="AbstractObservable.cs" />
     <Compile Include="Utils\Position.cs" />
     <Compile Include="Character\Character.cs" />
     <Compile Include="Character\AbstractCharacterFactory.cs" />
@@ -40,6 +38,11 @@
     <Compile Include="State\IState.cs" />
     <Compile Include="HQ\AbstractHeadQuarter.cs" />
     <Compile Include="HQ\AbstractHeadQuarterFactory.cs" />
+    <Compile Include="ObserverObservable\AbstractObservable.cs" />
+    <Compile Include="ObserverObservable\AbstractObserver.cs" />
+    <Compile Include="Mission\AbstractMission.cs" />
+    <Compile Include="Mission\AbstractStep.cs" />
+    <Compile Include="Mission\AbstractStepFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Item\" />
@@ -47,6 +50,8 @@
     <Folder Include="Strategy\" />
     <Folder Include="State\" />
     <Folder Include="HQ\" />
+    <Folder Include="ObserverObservable\" />
+    <Folder Include="Mission\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

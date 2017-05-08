@@ -4,9 +4,9 @@ using AntSimulator2017Abstract.Strategy;
 
 namespace AntSimulator2017Concrete.Character
 {
-    public class WarriorAnt : Ant
+    public class AntGatherer : Ant
     {
-        protected int attackValue { get => attackValue; set => attackValue = value; }
+        protected int load { get => load; set => load = value; }
 		protected override double lifePoint { get => lifePoint; set => lifePoint = value; }
 		protected override int perception { get => perception; set => perception = value; }
 		protected override int hungry { get => hungry; set => hungry = value; }
@@ -14,7 +14,7 @@ namespace AntSimulator2017Concrete.Character
 		protected override IStrategy strategy { get => strategy; set => strategy = value; }
 		protected override IState state { get => state; set => state = value; }
 
-        public WarriorAnt()
+        public AntGatherer()
         {
         }
     }

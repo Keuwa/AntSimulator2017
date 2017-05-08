@@ -29,12 +29,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Environement\AntHill.cs" />
-    <Compile Include="Environement\AntWorld.cs" />
-    <Compile Include="AntSimulation.cs" />
     <Compile Include="Character\Ant.cs" />
     <Compile Include="Character\WarriorAnt.cs" />
-    <Compile Include="WarriorAntFactory.cs" />
+    <Compile Include="Character\WarriorFactory.cs" />
+    <Compile Include="Character\ExplorerAnt.cs" />
+    <Compile Include="Character\ExplorerFactory.cs" />
+    <Compile Include="Character\AntGatherer.cs" />
+    <Compile Include="Character\GathererFactory.cs" />
+    <Compile Include="Character\Queen.cs" />
+    <Compile Include="Character\QueenFactory.cs" />
+    <Compile Include="Strategy\MovementStrategy.cs" />
+    <Compile Include="Strategy\EatStrategy.cs" />
+    <Compile Include="Strategy\FightStrategy.cs" />
+    <Compile Include="Strategy\ExplorationStrategy.cs" />
+    <Compile Include="Strategy\BringStrategy.cs" />
+    <Compile Include="Strategy\LayEggStrategy.cs" />
+    <Compile Include="State\FamishedState.cs" />
+    <Compile Include="State\FearState.cs" />
+    <Compile Include="State\SatedState.cs" />
+    <Compile Include="State\ConfidentState.cs" />
+    <Compile Include="State\DangerState.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
@@ -43,8 +57,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Environement\" />
     <Folder Include="Character\" />
+    <Folder Include="Strategy\" />
+    <Folder Include="State\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

@@ -31,22 +31,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AbstractObserver.cs" />
     <Compile Include="AbstractObservable.cs" />
-    <Compile Include="Environement\AbstractEnvironement.cs" />
-    <Compile Include="Environement\AbstractArea.cs" />
-    <Compile Include="Simulation\AbstractSimulation.cs" />
     <Compile Include="Utils\Position.cs" />
-    <Compile Include="Environement\AbstractAccess.cs" />
-    <Compile Include="Environement\Base.cs" />
     <Compile Include="Character\Character.cs" />
     <Compile Include="Character\AbstractCharacterFactory.cs" />
     <Compile Include="Item\AbstractItem.cs" />
     <Compile Include="Item\AbstractItemFactory.cs" />
+    <Compile Include="Strategy\IStrategy.cs" />
+    <Compile Include="State\IState.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Environement\" />
     <Folder Include="Item\" />
-    <Folder Include="Simulation\" />
     <Folder Include="Utils\" />
+    <Folder Include="Strategy\" />
+    <Folder Include="State\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

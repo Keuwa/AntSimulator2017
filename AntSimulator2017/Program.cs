@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using AntSimulator2017Concrete.Environement;
 using AntSimulator2017Concrete;
-using AntSimulator2017Abstract.Environement;
 
 namespace AntSimulator2017
 {
@@ -11,7 +9,7 @@ namespace AntSimulator2017
 		public static void Main(string[] args)
 		{
             
-			AntHill antHill = new AntHill();
+			/*AntHill antHill = new AntHill();
 			AntWorld world = new AntWorld(antHill);
 
             foreach(AntHill hill in world.bases){
@@ -24,7 +22,7 @@ namespace AntSimulator2017
 			
             simulation.simulate(13);
 
-            Console.WriteLine(simulation.getStats());
+            Console.WriteLine(simulation.getStats());*/
 
 
 		}

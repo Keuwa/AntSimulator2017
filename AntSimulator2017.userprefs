@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Concrete/item/VerySweetFruitItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Concrete/HQ/AntHillFactory.cs">
     <Files>
-      <File FileName="AntSimulator2017Concrete/State/DangerState.cs" Line="15" Column="13" />
-      <File FileName="AntSimulator2017Concrete/State/FamishedState.cs" Line="15" Column="46" />
-      <File FileName="AntSimulator2017Concrete/State/ConfidentState.cs" Line="15" Column="46" />
-      <File FileName="AntSimulator2017Concrete/State/FearState.cs" Line="15" Column="46" />
-      <File FileName="AntSimulator2017Concrete/item/PheromonesItem.cs" Line="12" Column="9" />
-      <File FileName="AntSimulator2017Concrete/item/SweetFruitItem.cs" Line="10" Column="128" />
-      <File FileName="AntSimulator2017Concrete/item/FruitItem.cs" Line="7" Column="25" />
-      <File FileName="AntSimulator2017Concrete/item/VerySweetFruitItem.cs" Line="12" Column="40" />
-      <File FileName="AntSimulator2017Abstract/Item/AbstractItem.cs" Line="7" Column="43" />
       <File FileName="AntSimulator2017Concrete/item/SweetFruitItemFactory.cs" Line="14" Column="41" />
-      <File FileName="AntSimulator2017Concrete/item/VerySweetItemFactory.cs" Line="14" Column="45" />
+      <File FileName="AntSimulator2017Abstract/HQ/AbstractHeadQuarter.cs" Line="7" Column="27" />
+      <File FileName="AntSimulator2017Abstract/HQ/AbstractHeadQuarterFactory.cs" Line="6" Column="24" />
+      <File FileName="AntSimulator2017Concrete/HQ/AntHill.cs" Line="10" Column="40" />
+      <File FileName="AntSimulator2017Concrete/HQ/AntHillFactory.cs" Line="4" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

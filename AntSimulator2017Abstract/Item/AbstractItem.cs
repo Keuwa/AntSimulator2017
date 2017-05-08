@@ -6,6 +6,7 @@ namespace AntSimulator2017Abstract.Item
 
         public abstract string name { get;}
         public int turnDuration { get; set; }
+        public Position position { get; set; }
 
     }
 }

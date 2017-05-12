@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{826CD593-BAC4-4C56-A831-82327C81001D}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>True</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AntSimulator2017Concrete</RootNamespace>
+    <AssemblyName>AntSimulator2017Concrete</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Character\Ant.cs" />
+    <Compile Include="Character\WarriorAnt.cs" />
+    <Compile Include="Character\WarriorFactory.cs" />
+    <Compile Include="Character\ExplorerAnt.cs" />
+    <Compile Include="Character\ExplorerFactory.cs" />
+    <Compile Include="Character\AntGatherer.cs" />
+    <Compile Include="Character\GathererFactory.cs" />
+    <Compile Include="Character\Queen.cs" />
+    <Compile Include="Character\QueenFactory.cs" />
+    <Compile Include="Strategy\MovementStrategy.cs" />
+    <Compile Include="Strategy\EatStrategy.cs" />
+    <Compile Include="Strategy\FightStrategy.cs" />
+    <Compile Include="Strategy\ExplorationStrategy.cs" />
+    <Compile Include="Strategy\BringStrategy.cs" />
+    <Compile Include="Strategy\LayEggStrategy.cs" />
+    <Compile Include="State\FamishedState.cs" />
+    <Compile Include="State\FearState.cs" />
+    <Compile Include="State\SatedState.cs" />
+    <Compile Include="State\ConfidentState.cs" />
+    <Compile Include="State\DangerState.cs" />
+    <Compile Include="item\PheromonesItem.cs" />
+    <Compile Include="item\SweetFruitItem.cs" />
+    <Compile Include="item\FruitItem.cs" />
+    <Compile Include="item\VerySweetFruitItem.cs" />
+    <Compile Include="item\PheromonesFactory.cs" />
+    <Compile Include="item\SweetFruitItemFactory.cs" />
+    <Compile Include="item\VerySweetItemFactory.cs" />
+    <Compile Include="HQ\AntHill.cs" />
+    <Compile Include="HQ\AntHillFactory.cs" />
+    <Compile Include="mission\Lay.cs" />
+    <Compile Include="mission\Explore.cs" />
+    <Compile Include="mission\ProtectAntHill.cs" />
+    <Compile Include="mission\Patrol.cs" />
+    <Compile Include="mission\BringFood.cs" />
+    <Compile Include="mission\step\CreateEgg.cs" />
+    <Compile Include="mission\step\Discover.cs" />
+    <Compile Include="mission\step\Shifting.cs" />
+    <Compile Include="mission\step\AwaitStep.cs" />
+    <Compile Include="mission\step\BringBackItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Character\" />
+    <Folder Include="Strategy\" />
+    <Folder Include="State\" />
+    <Folder Include="item\" />
+    <Folder Include="HQ\" />
+    <Folder Include="mission\" />
+    <Folder Include="mission\step\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
+      <Project>{4FC23F7D-20C0-4310-8A05-FB0FB0B6067D}</Project>
+      <Name>AntSimulator2017Abstract</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

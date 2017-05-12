@@ -1,0 +1,5 @@
+/Users/Vincent/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/Vincent/AntSimulator2017/AntSimulator2017Abstract/bin/Debug/AntSimulator2017Abstract.dll.mdb
+/Users/Vincent/AntSimulator2017/AntSimulator2017Abstract/bin/Debug/AntSimulator2017Abstract.dll
+/Users/Vincent/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.dll
+/Users/Vincent/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.dll.mdb

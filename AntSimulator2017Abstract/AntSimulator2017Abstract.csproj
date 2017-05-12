@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FC23F7D-20C0-4310-8A05-FB0FB0B6067D}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>True</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AntSimulator2017Abstract</RootNamespace>
+    <AssemblyName>AntSimulator2017Abstract</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Position.cs" />
+    <Compile Include="Character\Character.cs" />
+    <Compile Include="Character\AbstractCharacterFactory.cs" />
+    <Compile Include="Item\AbstractItem.cs" />
+    <Compile Include="Item\AbstractItemFactory.cs" />
+    <Compile Include="Strategy\IStrategy.cs" />
+    <Compile Include="State\IState.cs" />
+    <Compile Include="HQ\AbstractHeadQuarter.cs" />
+    <Compile Include="HQ\AbstractHeadQuarterFactory.cs" />
+    <Compile Include="ObserverObservable\AbstractObservable.cs" />
+    <Compile Include="ObserverObservable\AbstractObserver.cs" />
+    <Compile Include="Mission\AbstractMission.cs" />
+    <Compile Include="Mission\AbstractStep.cs" />
+    <Compile Include="Mission\AbstractStepFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Item\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Strategy\" />
+    <Folder Include="State\" />
+    <Folder Include="HQ\" />
+    <Folder Include="ObserverObservable\" />
+    <Folder Include="Mission\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

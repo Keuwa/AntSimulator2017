@@ -12,5 +12,15 @@ namespace AntSimulator2017Concrete.HQ
         public AntHill()
         {
         }
+
+        public override void update(object data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void notify()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

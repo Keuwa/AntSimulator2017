@@ -5,7 +5,7 @@ using AntSimulator2017Abstract.Strategy;
 
 namespace AntSimulator2017Abstract.Character
 {
-    public abstract class Character
+    public abstract class Character : AbstractObservable,AbstractObserver
     {
         public abstract double lifePoint { get; set; }
         public abstract int perception { get; set; }
@@ -17,5 +17,8 @@ namespace AntSimulator2017Abstract.Character
         public abstract IState state { get; set; }
         public abstract AbstractMission mission { get; set; }
 
-	}
+        public abstract void update(object data);
+
+
+    }
 }

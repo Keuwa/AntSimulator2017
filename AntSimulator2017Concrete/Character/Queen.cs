@@ -1,4 +1,5 @@
 ﻿using System;
+using AntSimulator2017Abstract.Mission;
 using AntSimulator2017Abstract.State;
 using AntSimulator2017Abstract.Strategy;
 
@@ -16,5 +17,16 @@ namespace AntSimulator2017Concrete.Character
 		public override int movementSpeed { get => movementSpeed; set => movementSpeed = value; }
 		public override IStrategy strategy { get => strategy; set => strategy = value; }
 		public override IState state { get => state; set => state = value; }
+        public override AbstractMission mission { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override void notify()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void update(object data)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

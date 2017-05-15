@@ -18,6 +18,7 @@ namespace AntSimulator2017Abstract.Mission
                 //Mission finish Observer/Observable for new mission
             }
         }
+
         protected void addStep(AbstractStep stepToAdd) {
             steps.Add(stepToAdd);
         }

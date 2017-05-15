@@ -1,21 +1,11 @@
 ﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Concrete/mission/step/BringBackItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Concrete/Character/AntGatherer.cs">
     <Files>
-      <File FileName="AntSimulator2017Abstract/Utils/Position.cs" Line="11" Column="24" />
-      <File FileName="AntSimulator2017Abstract/Mission/AbstractMission.cs" Line="10" Column="18" />
-      <File FileName="AntSimulator2017Abstract/Mission/AbstractStep.cs" Line="7" Column="42" />
-      <File FileName="AntSimulator2017Abstract/Mission/AbstractStepFactory.cs" Line="7" Column="51" />
-      <File FileName="AntSimulator2017Concrete/mission/Lay.cs" Line="4" Column="1" />
-      <File FileName="AntSimulator2017Abstract/Character/Character.cs" Line="18" Column="33" />
-      <File FileName="AntSimulator2017Concrete/mission/Explore.cs" Line="15" Column="89" />
-      <File FileName="AntSimulator2017Concrete/mission/ProtectAntHill.cs" Line="14" Column="2" />
-      <File FileName="AntSimulator2017Concrete/mission/Patrol.cs" Line="12" Column="67" />
-      <File FileName="AntSimulator2017Concrete/mission/BringFood.cs" Line="12" Column="61" />
-      <File FileName="AntSimulator2017Concrete/mission/step/CreateEgg.cs" Line="12" Column="56" />
-      <File FileName="AntSimulator2017Concrete/mission/step/Discover.cs" Line="12" Column="54" />
-      <File FileName="AntSimulator2017Concrete/mission/step/Shifting.cs" Line="15" Column="1" />
-      <File FileName="AntSimulator2017Concrete/mission/step/AwaitStep.cs" Line="12" Column="71" />
-      <File FileName="AntSimulator2017Concrete/mission/step/BringBackItem.cs" Line="4" Column="43" />
+      <File FileName="AntSimulator2017Concrete/Character/Ant.cs" Line="10" Column="9" />
+      <File FileName="AntSimulator2017Concrete/Character/AntGatherer.cs" Line="6" Column="45" />
+      <File FileName="AntSimulator2017Concrete/Character/ExplorerAnt.cs" Line="8" Column="26" />
+      <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObservable.cs" Line="8" Column="70" />
+      <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObserver.cs" Line="6" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

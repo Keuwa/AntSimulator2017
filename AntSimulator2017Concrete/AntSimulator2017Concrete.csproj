@@ -5,12 +5,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{826CD593-BAC4-4C56-A831-82327C81001D}</ProjectGuid>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <UseMSBuildEngine>True</UseMSBuildEngine>
     <OutputType>Library</OutputType>
     <RootNamespace>AntSimulator2017Concrete</RootNamespace>
     <AssemblyName>AntSimulator2017Concrete</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,12 +72,6 @@
     <Compile Include="mission\step\BringBackItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
-      <Project>{4FC23F7D-20C0-4310-8A05-FB0FB0B6067D}</Project>
-      <Name>AntSimulator2017Abstract</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Character\" />
     <Folder Include="Strategy\" />
     <Folder Include="State\" />
@@ -83,6 +79,12 @@
     <Folder Include="HQ\" />
     <Folder Include="mission\" />
     <Folder Include="mission\step\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">
+      <Project>{4FC23F7D-20C0-4310-8A05-FB0FB0B6067D}</Project>
+      <Name>AntSimulator2017Abstract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

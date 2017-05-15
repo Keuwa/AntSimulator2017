@@ -1,7 +1,7 @@
 ﻿using System;
 namespace AntSimulator2017Abstract.HQ
 {
-    public class AbstractHeadQuarter
+    public abstract class AbstractHeadQuarter : AbstractObservable, AbstractObserver
     {
 
         Position position;
@@ -9,5 +9,7 @@ namespace AntSimulator2017Abstract.HQ
         public AbstractHeadQuarter()
         {
         }
+
+        public abstract void update(object data);
     }
 }

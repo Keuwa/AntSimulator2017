@@ -7,5 +7,6 @@ namespace AntSimulator2017Concrete.Character
         public Ant()
         {
         }
+
     }
 }

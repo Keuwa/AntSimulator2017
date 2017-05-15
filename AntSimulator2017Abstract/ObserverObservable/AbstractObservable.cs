@@ -18,6 +18,6 @@ namespace AntSimulator2017Abstract
             observerList.Remove(observer);
         }
 
-        public abstract void notify();
+        public abstract void notify(Object datas);
     }
 }

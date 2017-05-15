@@ -12,6 +12,5 @@ namespace AntSimulator2017Concrete.mission
 
         public override string title => "Exploration de contrées inconnu";
 
-        protected override List<AbstractStep> steps { get => steps; set => steps = value; }
     }
 }

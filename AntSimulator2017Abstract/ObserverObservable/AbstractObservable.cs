@@ -5,7 +5,7 @@ namespace AntSimulator2017Abstract
 {
     public abstract class AbstractObservable
     {
-        protected readonly List<AbstractObserver> observerList = new List<AbstractObserver>();
+        protected List<AbstractObserver> observerList = new List<AbstractObserver>();
 
         public void attach(AbstractObserver observer)
         {

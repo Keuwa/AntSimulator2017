@@ -17,8 +17,6 @@ namespace AntSimulator2017Abstract.Character
         public abstract IState state { get; set; }
         public abstract AbstractMission mission { get; set; }
 
-        public abstract void update(object data);
-
-
+        public abstract void update(AbstractObservable src, object data);
     }
 }

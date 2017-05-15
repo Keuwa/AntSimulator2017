@@ -1,4 +1,5 @@
 ﻿using System;
+using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.HQ;
 using AntSimulator2017Concrete.Character;
 
@@ -13,12 +14,12 @@ namespace AntSimulator2017Concrete.HQ
         {
         }
 
-        public override void update(object data)
+        public override void update(AbstractObservable src, object data)
         {
             throw new NotImplementedException();
         }
 
-        public override void notify()
+        public override void notify(object datas)
         {
             throw new NotImplementedException();
         }

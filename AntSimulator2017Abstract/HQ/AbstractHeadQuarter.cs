@@ -10,6 +10,6 @@ namespace AntSimulator2017Abstract.HQ
         {
         }
 
-        public abstract void update(object data);
+        public abstract void update(AbstractObservable src, object data);
     }
 }

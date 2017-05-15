@@ -1,11 +1,20 @@
 ﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Concrete/Character/AntGatherer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Concrete/item/SweetFruitItem.cs">
     <Files>
       <File FileName="AntSimulator2017Concrete/Character/Ant.cs" Line="10" Column="9" />
-      <File FileName="AntSimulator2017Concrete/Character/AntGatherer.cs" Line="6" Column="45" />
-      <File FileName="AntSimulator2017Concrete/Character/ExplorerAnt.cs" Line="8" Column="26" />
-      <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObservable.cs" Line="8" Column="70" />
-      <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObserver.cs" Line="6" Column="3" />
+      <File FileName="AntSimulator2017Concrete/Character/AntGatherer.cs" Line="9" Column="25" />
+      <File FileName="AntSimulator2017Concrete/Character/ExplorerAnt.cs" Line="9" Column="26" />
+      <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObservable.cs" Line="21" Column="49" />
+      <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObserver.cs" Line="7" Column="55" />
+      <File FileName="AntSimulator2017Concrete/Character/Queen.cs" Line="9" Column="21" />
+      <File FileName="AntSimulator2017Concrete/Character/WarriorAnt.cs" Line="25" Column="17" />
+      <File FileName="AntSimulator2017Abstract/Character/Character.cs" Line="20" Column="72" />
+      <File FileName="AntSimulator2017Concrete/Character/ExplorerFactory.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Concrete/Character/GathererFactory.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Concrete/HQ/AntHill.cs" Line="8" Column="23" />
+      <File FileName="AntSimulator2017Abstract/HQ/AbstractHeadQuarter.cs" Line="4" Column="80" />
+      <File FileName="AntSimulator2017Concrete/item/FruitItem.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017Concrete/item/SweetFruitItem.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

@@ -5,17 +5,17 @@ namespace AntSimulator2017Abstract
 {
     public abstract class AbstractObservable
     {
-        protected List<AbstractObserver> observerList = new List<AbstractObserver>();
+        public List<AbstractObserver> ObserverList { get; set; } = new List<AbstractObserver>();
 
         public void attach(AbstractObserver observer)
         {
-            observerList.Add(observer);
+            ObserverList.Add(observer);
         }
 
 
         public void detach(AbstractObserver observer)
         {
-            observerList.Remove(observer);
+            ObserverList.Remove(observer);
         }
 
         public abstract void notify(Object datas);

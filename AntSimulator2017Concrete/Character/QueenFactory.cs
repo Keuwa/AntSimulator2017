@@ -1,4 +1,5 @@
 ﻿using System;
+using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.Character;
 namespace AntSimulator2017Concrete.Character
 {
@@ -8,9 +9,19 @@ namespace AntSimulator2017Concrete.Character
         {
         }
 
-        public override AntSimulator2017Abstract.Character.Character createCharacter()
+        public override AntSimulator2017Abstract.Character.Character createCharacter(string name,Position pos)
         {
-            return new Queen();
+            Queen ant = new Queen();
+			
+			ant.hungry = 10;
+			ant.lifePoint = 50;
+			ant.movementSpeed = 0;
+			ant.name = name;
+			ant.perception = 1;
+			ant.position = pos;
+			
+            return ant;
+            
         }
     }
 }

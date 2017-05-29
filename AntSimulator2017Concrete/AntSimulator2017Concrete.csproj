@@ -70,6 +70,16 @@
     <Compile Include="mission\step\Shifting.cs" />
     <Compile Include="mission\step\AwaitStep.cs" />
     <Compile Include="mission\step\BringBackItem.cs" />
+    <Compile Include="Simulation\AntSimulation.cs" />
+    <Compile Include="Simulation\AntSimulationFactory.cs" />
+    <Compile Include="Environnement\AntEnvironnement.cs" />
+    <Compile Include="Environnement\AntEnvironnementFactory.cs" />
+    <Compile Include="Environnement\Map\Area.cs" />
+    <Compile Include="Environnement\Map\AreaFactory.cs" />
+    <Compile Include="Environnement\Map\Link.cs" />
+    <Compile Include="Environnement\Map\LinkFactory.cs" />
+    <Compile Include="Environnement\Map\Map.cs" />
+    <Compile Include="Environnement\Map\MapFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Character\" />
@@ -79,6 +89,9 @@
     <Folder Include="HQ\" />
     <Folder Include="mission\" />
     <Folder Include="mission\step\" />
+    <Folder Include="Environnement\" />
+    <Folder Include="Simulation\" />
+    <Folder Include="Environnement\Map\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntSimulator2017Abstract\AntSimulator2017Abstract.csproj">

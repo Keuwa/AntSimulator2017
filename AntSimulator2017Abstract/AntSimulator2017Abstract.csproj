@@ -43,6 +43,16 @@
     <Compile Include="Mission\AbstractMission.cs" />
     <Compile Include="Mission\AbstractStep.cs" />
     <Compile Include="Mission\AbstractStepFactory.cs" />
+    <Compile Include="Simulation\AbstractSimulation.cs" />
+    <Compile Include="Environnement\AbstractEnvironnement.cs" />
+    <Compile Include="Environnement\AbstractEnvironnementFactory.cs" />
+    <Compile Include="Simulation\AbstractSimulationFactory.cs" />
+    <Compile Include="Environnement\Map\AbstractArea.cs" />
+    <Compile Include="Environnement\Map\AbstractLink.cs" />
+    <Compile Include="Environnement\Map\AbstractMap.cs" />
+    <Compile Include="Environnement\Map\AbstractAreaFactory.cs" />
+    <Compile Include="Environnement\Map\AbstractLinkFactory.cs" />
+    <Compile Include="Environnement\Map\AbstractMapFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Item\" />
@@ -52,6 +62,9 @@
     <Folder Include="HQ\" />
     <Folder Include="ObserverObservable\" />
     <Folder Include="Mission\" />
+    <Folder Include="Simulation\" />
+    <Folder Include="Environnement\" />
+    <Folder Include="Environnement\Map\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

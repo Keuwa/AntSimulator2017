@@ -3,6 +3,6 @@ namespace AntSimulator2017Abstract.HQ
 {
     public abstract class AbstractHeadQuarterFactory
     {
-        public abstract AbstractHeadQuarter createHQ();
+        public abstract AbstractHeadQuarter createHQ(Position pos);
     }
 }

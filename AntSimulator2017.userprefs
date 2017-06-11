@@ -1,5 +1,9 @@
 ﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/ObserverObservable/AbstractObservable.cs">
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/HQ/AbstractHeadQuarter.cs">
+>>>>>>> basic-gameplay
     <Files>
       <File FileName="AntSimulator2017Abstract/Environnement/Map/AbstractLinkFactory.cs" Line="9" Column="6" />
       <File FileName="AntSimulator2017Abstract/Environnement/Map/AbstractAreaFactory.cs" Line="1" Column="1" />
@@ -23,7 +27,11 @@
       <File FileName="AntSimulator2017Concrete/Character/GathererFactory.cs" Line="21" Column="8" />
       <File FileName="AntSimulator2017Concrete/Character/Queen.cs" Line="24" Column="3" />
       <File FileName="AntSimulator2017Concrete/Character/QueenFactory.cs" Line="21" Column="15" />
+<<<<<<< HEAD
       <File FileName="AntSimulator2017/Program.cs" Line="19" Column="64" />
+=======
+      <File FileName="AntSimulator2017/Program.cs" Line="19" Column="65" />
+>>>>>>> basic-gameplay
       <File FileName="AntSimulator2017Abstract/Environnement/Map/AbstractMapFactory.cs" Line="7" Column="67" />
       <File FileName="AntSimulator2017Abstract/Environnement/Map/AbstractMap.cs" Line="6" Column="38" />
       <File FileName="AntSimulator2017Abstract/Simulation/AbstractSimulation.cs" Line="9" Column="15" />
@@ -37,8 +45,11 @@
       <File FileName="AntSimulator2017Concrete/Character/WarriorAnt.cs" Line="21" Column="3" />
       <File FileName="AntSimulator2017Concrete/HQ/AntHillFactory.cs" Line="18" Column="126" />
       <File FileName="AntSimulator2017Concrete/HQ/AntHill.cs" Line="1" Column="1" />
+<<<<<<< HEAD
       <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObservable.cs" Line="1" Column="1" />
       <File FileName="AntSimulator2017Abstract/ObserverObservable/AbstractObserver.cs" Line="1" Column="1" />
+=======
+>>>>>>> basic-gameplay
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

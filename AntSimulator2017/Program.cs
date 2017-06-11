@@ -15,7 +15,7 @@ namespace AntSimulator2017
             str = String.Format("Environnement stats : \n Size : {0}x{1} ",environ.Map.areas.GetLength(0),environ.Map.areas[0].GetLength(0));
 			
             Console.WriteLine(str);
-            Console.WriteLine(environ.HeadQuarters[0].ObserverList);
+
             foreach(Character charac in environ.HeadQuarters[0].ObserverList){
                 Console.WriteLine(charac.name);
             }

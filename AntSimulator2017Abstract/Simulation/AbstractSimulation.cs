@@ -8,5 +8,6 @@ namespace AntSimulator2017Abstract.Simulation
         public static AbstractSimulation Instance { get; set; }
         public int NumberOfTurn { get; set; }
         public AbstractEnvironnement Environnement { get; set; }
+        public Random Random { get; set; }
     }
 }

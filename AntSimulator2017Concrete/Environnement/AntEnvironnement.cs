@@ -19,7 +19,7 @@ namespace AntSimulator2017Concrete.Environnement
                 str += "|";
                 for (int j = 0; j < Map.areas[i].Length;j++){
                     foreach(AntSimulator2017Abstract.Character.Character chara in temp ){
-                        if(chara.position.x == i && chara.position.y == j){
+                        if(chara.position.x == j && chara.position.y == i){
                             str += " X ";
                             temp.Remove(chara);
                             printed = true;

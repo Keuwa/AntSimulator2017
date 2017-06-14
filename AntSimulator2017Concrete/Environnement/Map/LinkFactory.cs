@@ -10,6 +10,7 @@ namespace AntSimulator2017Concrete.Environnement.Map
             Link link = new Link();
             link.Area1 = area1;
             link.Area2 = area2;
+            link.IsOpen = true;
 
             area1.Links.Add(link);
             area2.Links.Add(link);

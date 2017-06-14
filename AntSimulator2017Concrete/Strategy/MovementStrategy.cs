@@ -14,13 +14,12 @@ namespace AntSimulator2017Concrete.Strategy
 
         public void Execute()
         {
-            Random rnd = new Random();
             var map = AntSimulator2017Abstract.Simulation.AbstractSimulation.Instance.Environnement.Map;
             var current = map.areas[Charac.position.x][Charac.position.y];
             var chara = Charac.position;
 
             int x = current.Links.Count;
-            x = rnd.Next(x);
+            x = AntSimulator2017Abstract.Simulation.AbstractSimulation.Instance.Random.Next(x);
             current.Links[x].MoveTrough(Charac);
 
 

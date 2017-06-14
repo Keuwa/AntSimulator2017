@@ -10,12 +10,12 @@ namespace AntSimulator2017Concrete.Strategy
         {
         }
 
-        public void execute()
+        public void Execute()
         {
             throw new NotImplementedException();
         }
 
-        public void updateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
+        public void UpdateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
         {
             throw new NotImplementedException();
         }

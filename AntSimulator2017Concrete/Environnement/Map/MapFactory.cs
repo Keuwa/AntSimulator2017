@@ -15,6 +15,7 @@ namespace AntSimulator2017Concrete.Environnement.Map
                 for (int j = 0; j < width; j++)
                 {
                     map.areas[i][j] = new AreaFactory().createArea();
+                    map.areas[i][j].Position = new AntSimulator2017Abstract.Position(i, j);
                     if (i == 0)
                     {
                         if (j != 0)

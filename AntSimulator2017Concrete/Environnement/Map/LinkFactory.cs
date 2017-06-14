@@ -8,11 +8,11 @@ namespace AntSimulator2017Concrete.Environnement.Map
     {
         public override AbstractLink createLink(AbstractArea area1,AbstractArea area2){
             Link link = new Link();
-            link.area1 = area1;
-            link.area2 = area2;
+            link.Area1 = area1;
+            link.Area2 = area2;
 
-            area1.links.Add(link);
-            area2.links.Add(link);
+            area1.Links.Add(link);
+            area2.Links.Add(link);
             return link;
         }
     }

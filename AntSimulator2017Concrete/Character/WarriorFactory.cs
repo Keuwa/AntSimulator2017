@@ -18,6 +18,7 @@ namespace AntSimulator2017Concrete.Character
 			ant.name = name;
 			ant.perception = 1;
 			ant.position = pos;
+			ant.strategy = new Strategy.MovementStrategy(ant);
 			return ant;       
         }
     }

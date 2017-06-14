@@ -6,14 +6,14 @@ namespace AntSimulator2017Concrete.Simulation
 {
     public class AntSimulationFactory:AbstractSimulationFactory
     {
-
-
-
         public override AbstractSimulation createSimulation(int mapHeight,int mapWidth)
         {
-            AntSimulation simulation = new AntSimulation();
-            simulation.environnement = new AntEnvironnementFactory().createEnvironnement(mapHeight,mapWidth);
-            return simulation;
+            if(AbstractSimulation.Instance == null){
+				AntSimulation simulation = new AntSimulation();
+				simulation.Environnement = new AntEnvironnementFactory().createEnvironnement(mapHeight, mapWidth);
+                AbstractSimulation.Instance = simulation;
+            }
+            return AbstractSimulation.Instance;
         }
     }
 }

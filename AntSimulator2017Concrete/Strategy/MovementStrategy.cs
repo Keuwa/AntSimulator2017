@@ -1,22 +1,36 @@
 ﻿using System;
 using AntSimulator2017Abstract.Character;
 using AntSimulator2017Abstract.Strategy;
+
 namespace AntSimulator2017Concrete.Strategy
 {
     public class MovementStrategy : IStrategy
     {
-        public MovementStrategy()
-        {
+        public AntSimulator2017Abstract.Character.Character Charac { get; set; }
+
+        public MovementStrategy(AntSimulator2017Abstract.Character.Character charac){
+            this.Charac = charac;
         }
 
-        public void execute()
+        public void Execute()
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+            var map = AntSimulator2017Abstract.Simulation.AbstractSimulation.Instance.Environnement.Map;
+            var current = map.areas[Charac.position.x][Charac.position.y];
+            var chara = Charac.position;
+
+            int x = current.Links.Count;
+            x = rnd.Next(x);
+            current.Links[x].MoveTrough(Charac);
+
+
+            //Charac.position = current.position;
         }
 
-        public void updateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
+        public void UpdateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
         {
-            throw new NotImplementedException();
-        }
+            /*Charac = context;
+		    context.strategy = strategyReplacement;*/
+		}
     }
 }

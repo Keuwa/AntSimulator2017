@@ -1,12 +1,14 @@
 ﻿using System;
+using AntSimulator2017Abstract.Character;
 
 namespace AntSimulator2017Abstract.Environnement.Map
 {
     public abstract class AbstractLink
     {
-        public AbstractArea area1 { get; set; }
-        public AbstractArea area2 { get; set; }
-        public Boolean isOpen { get; set; }
+        public AbstractArea Area1 { get; set; }
+        public AbstractArea Area2 { get; set; }
+        public Boolean IsOpen { get; set; }
 
+        public abstract void MoveTrough(Character.Character charac);
     }
 }

@@ -3,6 +3,8 @@ namespace AntSimulator2017Abstract
 {
     public class Position
     {
+        private Position position;
+
         public int x { get; set; }
 		public int y { get; set; }
 
@@ -20,5 +22,6 @@ namespace AntSimulator2017Abstract
             this.x = x;
             this.y = y;
         }
+
     }
 }

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using AntSimulator2017Abstract.Simulation;
 using AntSimulator2017Abstract.Environnement.Map;
+using AntSimulator2017Concrete.item;
 
 namespace AntSimulator2017Concrete.Environnement.Map
 {
     public class MapFactory:AbstractMapFactory
     {
-        public override AbstractMap createMap(int height,int width){
+        public  AbstractMap createMap(int height, int width, int numberOfFruit){
             Map map = new Map();
             map.areas = new Area[height][];
             for (int i = 0; i < height;i++)
@@ -33,9 +35,25 @@ namespace AntSimulator2017Concrete.Environnement.Map
                     }
                 }
             }
+            int probability;
+			Random rand = new Random();
+
+			for (int i = 0; i < numberOfFruit;i++){
+				Area area = (Area)map.areas[rand.Next(0, height)][rand.Next(0, height)];
+                probability = rand.Next(10);
+                if(probability <= 2){
+					area.Fruits.Add(new VerySweetItemFactory().createItem());
+				}
+                else{
+					area.Fruits.Add(new SweetFruitItemFactory().createItem());
+				}
+            }
             return map;
         }
 
-
+        public override AbstractMap createMap(int height, int width)
+        {
+           return createMap(height,width,5);
+        }
     }
 }

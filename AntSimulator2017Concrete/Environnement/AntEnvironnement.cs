@@ -15,19 +15,23 @@ namespace AntSimulator2017Concrete.Environnement
             }
             Boolean printed = false;
             String str = "";
-            for (int i = 0; i < Map.areas.Length;i++){
+            for (int y = 0; y < Map.areas.Length;y++){
                 str += "|";
-                for (int j = 0; j < Map.areas[i].Length;j++){
+                for (int x = 0; x < Map.areas[y].Length;x++){
                     foreach(AntSimulator2017Abstract.Character.Character chara in temp ){
-                        if(chara.position.x == j && chara.position.y == i){
-                            str += " X ";
-                            temp.Remove(chara);
+                        if(chara.position.x == x && chara.position.y == y){
+                            str += chara.lifePoint + " ";
+							temp.Remove(chara);
                             printed = true;
                             break;
                         }
                     }
                     if(!printed){
-                        str += " - ";
+                        if (Map.areas[x][y].Fruits.Count != 0){
+                            str += "F ";
+						}else{
+							str += Map.areas[x][y].usedSpace + " ";
+						}
                     }
 					printed = false;
 				}

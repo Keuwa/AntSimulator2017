@@ -6,9 +6,5 @@ namespace AntSimulator2017Concrete.item
         public VerySweetFruitItem()
         {
         }
-
-        public override int portion { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public override string name => "Fruit very sweet";
     }
 }

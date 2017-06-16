@@ -4,9 +4,7 @@ namespace AntSimulator2017Concrete.item
 {
     public abstract class FruitItem : AbstractItem
     {
-        public abstract int portion { get; set; }
-        public FruitItem()
-        {
-        }
-    }
+        public int Portion { get; set; }
+        public int FeedingValue { get; set; }
+	}
 }

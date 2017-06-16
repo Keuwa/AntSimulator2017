@@ -9,7 +9,7 @@ namespace AntSimulator2017Abstract.Character
     {
         public double lifePoint { get; set; }
         public int perception { get; set; }
-        public int hungry { get; set; }
+        public int hunger { get; set; }
         public int movementSpeed { get; set; }
         public string name { get; set; }
         public Position position { get; set; }
@@ -18,5 +18,13 @@ namespace AntSimulator2017Abstract.Character
         public AbstractMission mission { get; set; }
 
         public abstract void update(AbstractObservable src, object data);
-    }
+
+        public bool IsDead(){
+            if (lifePoint<=0){
+                return true;
+            }
+            return false;
+        }
+
+	}
 }

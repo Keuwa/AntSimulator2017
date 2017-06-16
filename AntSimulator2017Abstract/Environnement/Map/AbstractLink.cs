@@ -10,5 +10,7 @@ namespace AntSimulator2017Abstract.Environnement.Map
         public Boolean IsOpen { get; set; }
 
         public abstract void MoveTrough(Character.Character charac);
+        public abstract Boolean CanMoveTrough();
+        public abstract bool IsAreaAccessible(Position pos);
     }
 }

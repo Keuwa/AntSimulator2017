@@ -13,6 +13,8 @@ namespace AntSimulator2017Concrete.Simulation
 				simulation.Environnement = new AntEnvironnementFactory().createEnvironnement(mapHeight, mapWidth);
                 simulation.Random = new Random();
                 simulation.NumberOfTurn = 0;
+                simulation.NumberOfDeathThisTurn = 0;
+                simulation.NumberOfDeathTotal = 0;
                 AbstractSimulation.Instance = simulation;
             }
             return AbstractSimulation.Instance;

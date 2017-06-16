@@ -9,7 +9,8 @@ namespace AntSimulator2017Concrete.Environnement.Map
         public override AbstractArea createArea()
         {
             Area area = new Area();
-            area.Space = 2;
+            area.Fruits = new List<AntSimulator2017Abstract.Item.AbstractItem>();
+            area.Space = 1;
             area.Links = new List<AbstractLink>();
             return area;
         }

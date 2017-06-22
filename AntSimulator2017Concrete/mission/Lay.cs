@@ -10,7 +10,5 @@ namespace AntSimulator2017Concrete.mission
         {
             
         }
-
-        public override string title => "Pondre des oeufs";
     }
 }

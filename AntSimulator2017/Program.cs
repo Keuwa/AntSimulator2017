@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.Character;
 using AntSimulator2017Concrete.Character;
+using AntSimulator2017Concrete.HQ;
 using AntSimulator2017Concrete.Simulation;
 
 namespace AntSimulator2017
@@ -11,7 +12,7 @@ namespace AntSimulator2017
 	{
 		public static void Main(string[] args)
 		{
-            int x = 6, y = 6;
+            int x = 10, y = 10;
             AntSimulation simulation = (AntSimulator2017Concrete.Simulation.AntSimulation)new AntSimulationFactory().createSimulation(x,y);
 
             String str;
@@ -23,11 +24,13 @@ namespace AntSimulator2017
 
 
             while(true){
-				str = String.Format("Number of death this turn : {0} \n Number of death Total : {1}", simulation.NumberOfDeathThisTurn, simulation.NumberOfDeathTotal);
+				str = String.Format("Number of death this turn : {0} \nNumber of death Total : {1}", simulation.NumberOfDeathThisTurn, simulation.NumberOfDeathTotal);
+				Console.WriteLine(str);
+                str = String.Format("Anthill number of ants :{0}\n food supply{1} ", simulation.Environnement.HeadQuarters[0].ObserverList.Count, (simulation.Environnement.HeadQuarters[0] as AntHill).FoodReserve);
 				Console.WriteLine(str);
 				foreach (Character charac in simulation.Environnement.HeadQuarters[0].ObserverList)
 				{
-                    Console.WriteLine(String.Format("{0} ---- (x:{1} y:{2}) Hunger:{3}", charac.name, charac.position.x, charac.position.y,charac.hunger));
+                    Console.WriteLine(String.Format("{0} ---- (x:{1} y:{2}) Hunger:{3} Strategy:{4}", charac.name, charac.position.x, charac.position.y,charac.hunger,charac.strategy.GetType()));
 				}
                 List<Position> listOfPosition = new List<Position>();
 				foreach (Ant ant in simulation.Environnement.HeadQuarters[0].ObserverList)

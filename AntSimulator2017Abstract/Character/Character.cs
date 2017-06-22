@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using AntSimulator2017Abstract.Item;
 using AntSimulator2017Abstract.Mission;
 using AntSimulator2017Abstract.State;
 using AntSimulator2017Abstract.Strategy;
@@ -11,6 +12,8 @@ namespace AntSimulator2017Abstract.Character
         public int perception { get; set; }
         public int hunger { get; set; }
         public int movementSpeed { get; set; }
+        public AbstractItem Load{ get; set; }
+        public int LoadCapacity { get; set; }
         public string name { get; set; }
         public Position position { get; set; }
         public IStrategy strategy { get; set; }
@@ -25,6 +28,5 @@ namespace AntSimulator2017Abstract.Character
             }
             return false;
         }
-
 	}
 }

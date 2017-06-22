@@ -13,7 +13,7 @@ namespace AntSimulator2017Concrete.Character
         {
             Queen ant = new Queen();
 			
-			ant.hunger = 10;
+			ant.hunger = 100;
 			ant.lifePoint = 50;
 			ant.movementSpeed = 0;
 			ant.name = name;

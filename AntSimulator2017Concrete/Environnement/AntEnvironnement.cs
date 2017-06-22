@@ -1,6 +1,9 @@
 ﻿using System;
 using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.Environnement;
+using AntSimulator2017Concrete.Environnement.Map;
+using AntSimulator2017Concrete.item;
+
 namespace AntSimulator2017Concrete.Environnement
 {
     public class AntEnvironnement : AbstractEnvironnement
@@ -27,9 +30,33 @@ namespace AntSimulator2017Concrete.Environnement
                         }
                     }
                     if(!printed){
-                        if (Map.areas[x][y].Fruits.Count != 0){
+                        var area = Map.areas[x][y] as Area;
+                        if (area.Fruits.Count != 0){
                             str += "F ";
-						}else{
+						}
+						else if (Simulation.AntSimulation.Instance.Environnement.HeadQuarters[0].Position.x == x && Simulation.AntSimulation.Instance.Environnement.HeadQuarters[0].Position.y == y)
+						{
+							str += "X ";
+
+						}
+						else if (area.Pheromones.Count != 0){
+                            bool isFoodPheromones = false;
+                            foreach (var phero in area.Pheromones){
+                                if(phero.Type.Equals(PheromonesItem.FOOD)){
+                                    isFoodPheromones = true;
+                                    break;
+                                }
+                            }
+                            if (isFoodPheromones)
+                            {
+                                str += "@ ";
+                            }
+                            else
+                            {
+                                str += ". ";
+                            }
+						}
+						else{
 							str += Map.areas[x][y].usedSpace + " ";
 						}
                     }

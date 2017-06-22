@@ -12,6 +12,7 @@ namespace AntSimulator2017Concrete.HQ
         {
             AntHill anthill = new AntHill();
             anthill.Position = pos;
+            anthill.FoodReserve = 100;
             anthill.queen = (Queen)new QueenFactory().createCharacter("Reine 1",pos);
             anthill.attach(new GathererFactory().createCharacter("Jean michel Gatherer",new Position(pos.x+1,pos.y)));
 			anthill.attach(new WarriorFactory().createCharacter("Pierre henry Warrior", new Position(pos.x - 1, pos.y)));

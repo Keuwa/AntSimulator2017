@@ -9,6 +9,7 @@ namespace AntSimulator2017Concrete.HQ
     {
 
         public Queen queen { get; set; }
+        public int FoodReserve { get; set; }
 
         public AntHill()
         {

@@ -11,7 +11,14 @@ namespace AntSimulator2017Concrete.item
 
         public override AbstractItem createItem()
         {
-            return new PheromonesItem();
+            return CreateItemWithType(PheromonesItem.NEUTRAL);
+        }
+
+        public AbstractItem CreateItemWithType(String type){
+			PheromonesItem pheromone = new PheromonesItem();
+            pheromone.Type = type;
+            pheromone.turnDuration = PheromonesItem.DURATION;
+			return pheromone;
         }
     }
 }

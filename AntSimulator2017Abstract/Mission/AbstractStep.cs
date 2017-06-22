@@ -3,7 +3,9 @@ namespace AntSimulator2017Abstract.Mission
 {
     public abstract class AbstractStep
     {
-        public abstract string name { get; }
-        public Position position { get; }
+        //If true step is over, goToNextStep
+        public abstract void DoStep(Character.Character character);
+        public abstract void updateStrategy(Character.Character character);
+        public bool StepIsOver { get; set; } = false;
     }
 }

@@ -10,6 +10,7 @@ namespace AntSimulator2017Concrete.Environnement.Map
         {
             Area area = new Area();
             area.Fruits = new List<AntSimulator2017Abstract.Item.AbstractItem>();
+            area.Pheromones = new List<item.PheromonesItem>();
             area.Space = 1;
             area.Links = new List<AbstractLink>();
             return area;

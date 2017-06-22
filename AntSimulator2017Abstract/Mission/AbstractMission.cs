@@ -6,21 +6,28 @@ namespace AntSimulator2017Abstract.Mission
 {
     public abstract class AbstractMission
     {
-        public abstract string title { get; }
-        protected List<AbstractStep> steps { get; set; }
-        protected AbstractStep currentStep { get; set; }
+        protected List<AbstractStep> steps { get; set; } 
+        protected AbstractStep currentStep { get; set; } 
 
         public void updateStep(Character.Character context) {
             if (steps.IndexOf(currentStep) +1 < steps.Count) {
                 currentStep = steps.ElementAt(steps.IndexOf(currentStep) + 1);
-                // DISPLAY NEW STEP
+                currentStep.updateStrategy(context);
+                //TODO DISPLAY NEW STEP
             } else {
-                //Mission finish Observer/Observable for new mission
+                //TODO Mission finish Observer/Observable for new mission
+                currentStep = steps[0];
+				currentStep.updateStrategy(context);
+			}
+        }
+
+        public void ExecuteStep(Character.Character character){
+            currentStep.DoStep(character);
+            if(currentStep.StepIsOver){
+                currentStep.StepIsOver = false;
+                updateStep(character);
             }
         }
 
-        protected void addStep(AbstractStep stepToAdd) {
-            steps.Add(stepToAdd);
-        }
     }
 }

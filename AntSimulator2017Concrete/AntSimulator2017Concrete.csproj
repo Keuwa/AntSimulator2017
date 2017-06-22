@@ -80,6 +80,9 @@
     <Compile Include="Environnement\Map\LinkFactory.cs" />
     <Compile Include="Environnement\Map\Map.cs" />
     <Compile Include="Environnement\Map\MapFactory.cs" />
+    <Compile Include="Strategy\BaseStrategy.cs" />
+    <Compile Include="mission\step\SearchFood.cs" />
+    <Compile Include="Strategy\SearchFoodStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Character\" />

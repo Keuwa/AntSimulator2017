@@ -12,7 +12,7 @@ namespace AntSimulator2017Concrete.item
         public override AbstractItem createItem()
         {
             VerySweetFruitItem item = new VerySweetFruitItem();
-			item.FeedingValue = 10;
+			item.FeedingValue = 20;
 			item.Portion = 999;
 			return item;        
         }

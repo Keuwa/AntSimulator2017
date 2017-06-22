@@ -53,7 +53,7 @@ namespace AntSimulator2017Concrete.Environnement.Map
 
         public override AbstractMap createMap(int height, int width)
         {
-           return createMap(height,width,5);
+           return createMap(height,width,2);
         }
     }
 }

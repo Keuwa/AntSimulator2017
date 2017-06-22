@@ -1,12 +1,12 @@
-﻿using System;
-using AntSimulator2017Abstract.Simulation;
+﻿using AntSimulator2017Abstract.Simulation;
 using System.Collections.Generic;
 using AntSimulator2017Concrete.Character;
-using AntSimulator2017Abstract;
+using AntSimulator2017Concrete.HQ;
+using AntSimulator2017Concrete.Environnement.Map;
+using AntSimulator2017Concrete.item;
 
 namespace AntSimulator2017Concrete.Simulation
 {
-    
     public class AntSimulation : AbstractSimulation
     {
 		public int NumberOfDeathTotal { get; set; }
@@ -31,12 +31,19 @@ namespace AntSimulator2017Concrete.Simulation
                     NumberOfDeathTotal++;
                 }
             }
+
 			foreach (Ant ant in ants){
                 Environnement.HeadQuarters[0].detach(ant);
 			}
 
+            (Environnement.Map as Map).Simulate();
+
+            /*foreach(AntHill anthill in Environnement.HeadQuarters){
+                anthill.queen.strategy.Execute();
+            }*/
+
             if(NumberOfTurn%15==0){
-                Position pos = new Position(Environnement.HeadQuarters[0].Position.x,Environnement.HeadQuarters[0].Position.y);
+                AntSimulator2017Abstract.Position pos = new AntSimulator2017Abstract.Position(Environnement.HeadQuarters[0].Position.x,Environnement.HeadQuarters[0].Position.y);
                 Environnement.HeadQuarters[0].ObserverList.Add(new ExplorerFactory().createCharacter("JEAN PAUL "+Environnement.ObserverList.Count, pos));   
             }
         }

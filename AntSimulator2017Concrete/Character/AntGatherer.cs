@@ -8,7 +8,6 @@ namespace AntSimulator2017Concrete.Character
 {
     public class AntGatherer : Ant
     {
-        public int load { get => load; set => load = value; }
 		
         public AntGatherer()
         {

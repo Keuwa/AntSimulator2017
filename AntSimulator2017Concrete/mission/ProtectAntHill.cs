@@ -9,6 +9,5 @@ namespace AntSimulator2017Concrete.mission
         {
         }
 
-        public override string title => "Protéger la fourmilliére ";
     }
 }

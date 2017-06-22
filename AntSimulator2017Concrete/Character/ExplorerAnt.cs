@@ -8,9 +8,6 @@ namespace AntSimulator2017Concrete.Character
 {
     public class ExplorerAnt : Ant
     {
-        public ExplorerAnt()
-        {
-        }
 
         public override void notify(Object datas)
         {

@@ -9,6 +9,5 @@ namespace AntSimulator2017Concrete.mission
         {
         }
 
-        public override string title => "Patrouiller dans une zone";
     }
 }

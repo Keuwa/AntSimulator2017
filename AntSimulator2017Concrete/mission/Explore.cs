@@ -8,9 +8,7 @@ namespace AntSimulator2017Concrete.mission
     {
         public Explore()
         {
+            
         }
-
-        public override string title => "Exploration de contrées inconnu";
-
     }
 }

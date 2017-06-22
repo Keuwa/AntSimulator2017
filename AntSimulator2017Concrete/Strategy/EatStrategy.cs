@@ -4,18 +4,18 @@ using AntSimulator2017Abstract.Strategy;
 
 namespace AntSimulator2017Concrete.Strategy
 {
-    public class EatStrategy : IStrategy
+    public class EatStrategy : BaseStrategy
     {
-        public EatStrategy()
+        public EatStrategy(AntSimulator2017Abstract.Character.Character charac) : base(charac)
         {
         }
 
-        public void Execute()
+        public override void Execute()
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
+        public override void UpdateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
         {
             throw new NotImplementedException();
         }

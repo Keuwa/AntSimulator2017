@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using AntSimulator2017Abstract.Character;
 using AntSimulator2017Abstract.Strategy;
 using AntSimulator2017Abstract.Environnement.Map;
+using AntSimulator2017Concrete.item;
 
 namespace AntSimulator2017Concrete.Strategy
 {
-    public class MovementStrategy : IStrategy
+    public class MovementStrategy : BaseStrategy
     {
-        public AntSimulator2017Abstract.Character.Character Charac { get; set; }
-
-        public MovementStrategy(AntSimulator2017Abstract.Character.Character charac){
-            this.Charac = charac;
+        public MovementStrategy(AntSimulator2017Abstract.Character.Character charac) : base(charac)
+        {
         }
 
-        public void Execute()
+        public override void Execute()
         {
             List<AbstractLink> links = new List<AbstractLink>();
 
@@ -33,9 +32,12 @@ namespace AntSimulator2017Concrete.Strategy
 				x = AntSimulator2017Abstract.Simulation.AbstractSimulation.Instance.Random.Next(x);
 				links[x].MoveTrough(Charac); 
             }
+
+            ///put pheromones
+            PutPheromones(PheromonesItem.NEUTRAL);
         }
 
-        public void UpdateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
+        public override void UpdateCharacterStrategy(AntSimulator2017Abstract.Character.Character context, IStrategy strategyReplacement)
         {
             /*Charac = context;
 		    context.strategy = strategyReplacement;*/

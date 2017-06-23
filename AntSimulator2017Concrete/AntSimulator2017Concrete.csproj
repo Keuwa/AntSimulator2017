@@ -83,6 +83,8 @@
     <Compile Include="Strategy\BaseStrategy.cs" />
     <Compile Include="mission\step\SearchFood.cs" />
     <Compile Include="Strategy\SearchFoodStrategy.cs" />
+    <Compile Include="item\EggItem.cs" />
+    <Compile Include="Strategy\IdleStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Character\" />

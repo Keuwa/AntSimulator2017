@@ -1,28 +1,23 @@
 ﻿<Properties StartupConfiguration="{28392122-6D84-4247-BF3C-CBB0AA5F03B9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/Environnement/Map/AbstractMap.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntSimulator2017Abstract/Utils/Position.cs">
     <Files>
+      <File FileName="AntSimulator2017Concrete/Simulation/AntSimulation.cs" Line="24" Column="31" />
+      <File FileName="AntSimulator2017Concrete/Character/Queen.cs" Line="27" Column="36" />
+      <File FileName="AntSimulator2017Concrete/item/EggItem.cs" Line="6" Column="38" />
+      <File FileName="AntSimulator2017Concrete/HQ/AntHill.cs" Line="44" Column="75" />
       <File FileName="AntSimulator2017Concrete/Environnement/AntEnvironnement.cs" Line="42" Column="7" />
-      <File FileName="AntSimulator2017Concrete/Strategy/SearchFoodStrategy.cs" Line="51" Column="1" />
-      <File FileName="AntSimulator2017Concrete/Environnement/Map/Link.cs" Line="7" Column="28" />
-      <File FileName="AntSimulator2017Abstract/Environnement/Map/AbstractLink.cs" Line="38" Column="1" />
-      <File FileName="AntSimulator2017/Program.cs" Line="42" Column="1" />
-      <File FileName="AntSimulator2017Concrete/Simulation/AntSimulation.cs" Line="39" Column="51" />
-      <File FileName="AntSimulator2017Concrete/Environnement/AntEnvironnementFactory.cs" Line="20" Column="6" />
-      <File FileName="AntSimulator2017Concrete/HQ/AntHillFactory.cs" Line="16" Column="15" />
-      <File FileName="AntSimulator2017Concrete/Character/ExplorerAnt.cs" Line="10" Column="6" />
-      <File FileName="AntSimulator2017Concrete/Character/ExplorerFactory.cs" Line="22" Column="17" />
-      <File FileName="AntSimulator2017Concrete/Character/GathererFactory.cs" Line="18" Column="19" />
-      <File FileName="AntSimulator2017Concrete/item/PheromonesFactory.cs" Line="20" Column="62" />
-      <File FileName="AntSimulator2017Concrete/item/PheromonesItem.cs" Line="12" Column="40" />
-      <File FileName="AntSimulator2017Concrete/Environnement/Map/Map.cs" Line="13" Column="88" />
-      <File FileName="AntSimulator2017Concrete/Environnement/Map/MapFactory.cs" Line="56" Column="43" />
-      <File FileName="AntSimulator2017Abstract/Environnement/Map/AbstractMap.cs" Line="1" Column="1" />
+      <File FileName="AntSimulator2017/Program.cs" Line="54" Column="1" />
+      <File FileName="AntSimulator2017Concrete/HQ/AntHillFactory.cs" Line="23" Column="1" />
+      <File FileName="AntSimulator2017Concrete/Environnement/Map/Map.cs" Line="19" Column="80" />
+      <File FileName="AntSimulator2017Concrete/Environnement/AntEnvironnementFactory.cs" Line="16" Column="39" />
+      <File FileName="AntSimulator2017Concrete/Simulation/AntSimulationFactory.cs" Line="21" Column="17" />
+      <File FileName="AntSimulator2017Abstract/Utils/Position.cs" Line="20" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017/Program.cs" relfile="AntSimulator2017/Program.cs" line="42" column="1" />
+      <Breakpoint file="/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017/Program.cs" relfile="AntSimulator2017/Program.cs" line="54" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

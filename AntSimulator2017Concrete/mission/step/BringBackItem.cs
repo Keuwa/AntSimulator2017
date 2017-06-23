@@ -14,7 +14,6 @@ namespace AntSimulator2017Concrete.mission.step
         {
         }
 
-
         public override void DoStep(AntSimulator2017Abstract.Character.Character character)
         {
             //TODO multi headquarter

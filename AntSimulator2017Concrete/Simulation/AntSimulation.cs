@@ -15,10 +15,14 @@ namespace AntSimulator2017Concrete.Simulation
         public void Simulate()
         {
             List<Ant> ants = new List<Ant>();
+
             NumberOfTurn++;
 			NumberOfDeathThisTurn = 0;
 
-			//NumberOfDeathTotal += NumberOfDeathThisTurn;
+
+            foreach(AntHill hq in Environnement.HeadQuarters){
+                hq.Simulate();
+            }
 
 			foreach(Ant chara in Environnement.HeadQuarters[0].ObserverList){
                 chara.Analyse();
@@ -38,14 +42,19 @@ namespace AntSimulator2017Concrete.Simulation
 
             (Environnement.Map as Map).Simulate();
 
-            /*foreach(AntHill anthill in Environnement.HeadQuarters){
-                anthill.queen.strategy.Execute();
-            }*/
+            foreach(AntHill anthill in Environnement.HeadQuarters){
+				anthill.queen.Analyse();
+				anthill.queen.strategy.Execute();
+				anthill.queen.EndTurn();
+                if(anthill.queen.IsDead()){
+					throw new System.NotImplementedException();
+				}
+            }
 
-            if(NumberOfTurn%15==0){
+            /*if(NumberOfTurn%15==0){
                 AntSimulator2017Abstract.Position pos = new AntSimulator2017Abstract.Position(Environnement.HeadQuarters[0].Position.x,Environnement.HeadQuarters[0].Position.y);
                 Environnement.HeadQuarters[0].ObserverList.Add(new ExplorerFactory().createCharacter("JEAN PAUL "+Environnement.ObserverList.Count, pos));   
-            }
+            }*/
         }
     }
 }

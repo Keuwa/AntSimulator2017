@@ -23,5 +23,11 @@ namespace AntSimulator2017Abstract
             this.y = y;
         }
 
+        public Position(Position pos)
+		{
+			this.x = pos.x;
+			this.y = pos.y;
+		}
+
     }
 }

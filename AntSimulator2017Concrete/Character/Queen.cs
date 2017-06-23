@@ -3,6 +3,8 @@ using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.Mission;
 using AntSimulator2017Abstract.State;
 using AntSimulator2017Abstract.Strategy;
+using AntSimulator2017Concrete.HQ;
+using AntSimulator2017Concrete.item;
 
 namespace AntSimulator2017Concrete.Character
 {
@@ -12,16 +14,25 @@ namespace AntSimulator2017Concrete.Character
         {
         }
 
-		/*public override double lifePoint { get => lifePoint; set => lifePoint = value; }
-		public override int perception { get => perception; set => perception = value; }
-		public override int hungry { get => hungry; set => hungry = value; }
-		public override int movementSpeed { get => movementSpeed; set => movementSpeed = value; }
-		public override IStrategy strategy { get => strategy; set => strategy = value; }
-		public override IState state { get => state; set => state = value; }
-        public override AbstractMission mission { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public override string name { get; set ; }
-        public override Position position { get; set; }
-*/
+        public void EatReserve(AntHill hill)
+        {
+            if (hungerMax - hunger > 5){
+                int foodEaten = (hill.FoodReserve <= 5) ? hill.FoodReserve : 5;
+
+                hill.FoodReserve -= foodEaten;
+                hunger += foodEaten;
+            }else{
+				int foodEaten = (hill.FoodReserve <= hungerMax - hunger) ? hill.FoodReserve : hungerMax - hunger;
+				hill.FoodReserve -= foodEaten; 
+                hunger += foodEaten;
+            }
+        }
+
+        public void LayEgg(AntHill hill){
+			hill.EggReserve.Add(new EggItem(10));
+            this.hunger = hunger / 2;
+		}
+
         public override void notify(Object datas)
         {
             throw new NotImplementedException();

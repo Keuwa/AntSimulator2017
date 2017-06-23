@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using AntSimulator2017Abstract.Simulation;
 using AntSimulator2017Concrete.Environnement;
+using AntSimulator2017Concrete.HQ;
 
 namespace AntSimulator2017Concrete.Simulation
 {
@@ -16,8 +18,14 @@ namespace AntSimulator2017Concrete.Simulation
                 simulation.NumberOfDeathThisTurn = 0;
                 simulation.NumberOfDeathTotal = 0;
                 AbstractSimulation.Instance = simulation;
-            }
-            return AbstractSimulation.Instance;
+
+                foreach(AntHill hill in AntSimulation.Instance.Environnement.HeadQuarters){
+                    Simulation.AntSimulation.Instance.Environnement.Map.areas[hill.Position.x][hill.Position.y].Space = 999;
+				}
+
+			}
+
+			return AbstractSimulation.Instance;
         }
     }
 }

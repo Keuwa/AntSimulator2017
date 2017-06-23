@@ -23,7 +23,7 @@ namespace AntSimulator2017Concrete.Environnement
                 for (int x = 0; x < Map.areas[y].Length;x++){
                     foreach(AntSimulator2017Abstract.Character.Character chara in temp ){
                         if(chara.position.x == x && chara.position.y == y){
-                            str += chara.lifePoint + " ";
+                            str += "A ";
 							temp.Remove(chara);
                             printed = true;
                             break;
@@ -37,7 +37,6 @@ namespace AntSimulator2017Concrete.Environnement
 						else if (Simulation.AntSimulation.Instance.Environnement.HeadQuarters[0].Position.x == x && Simulation.AntSimulation.Instance.Environnement.HeadQuarters[0].Position.y == y)
 						{
 							str += "X ";
-
 						}
 						else if (area.Pheromones.Count != 0){
                             bool isFoodPheromones = false;

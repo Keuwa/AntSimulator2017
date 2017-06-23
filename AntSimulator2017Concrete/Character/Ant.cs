@@ -17,15 +17,8 @@ namespace AntSimulator2017Concrete.Character
 
         internal void Analyse()
         {
-            //TODO: Define action using mission
-
             mission.ExecuteStep(this);
 
-            /*Area map = (Area)Simulation.AntSimulation.Instance.Environnement.Map.areas[position.x][position.y];
-            if(map.Fruits.Count!=0){
-                //TODO: gérer multifruit
-                Eat((FruitItem)map.Fruits[0]);
-            }*/
         }
 
         public void Eat(FruitItem fruit)

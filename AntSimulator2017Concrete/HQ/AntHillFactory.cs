@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.HQ;
 using AntSimulator2017Concrete.Character;
+using AntSimulator2017Concrete.item;
 
 namespace AntSimulator2017Concrete.HQ
 {
@@ -11,6 +13,7 @@ namespace AntSimulator2017Concrete.HQ
         public override AbstractHeadQuarter createHQ(Position pos)
         {
             AntHill anthill = new AntHill();
+            anthill.EggReserve = new List<EggItem>(); 
             anthill.Position = pos;
             anthill.FoodReserve = 100;
             anthill.queen = (Queen)new QueenFactory().createCharacter("Reine 1",pos);

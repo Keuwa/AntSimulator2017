@@ -49,6 +49,7 @@
      <Compile Include="Assets\Script\Ant.cs" />
      <Compile Include="Assets\Script\BoardManager.cs" />
      <Compile Include="Assets\Script\ControlCamera.cs" />
+     <Compile Include="Assets\Script\GameEventManager.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\MenuScript.cs" />
      <Compile Include="Assets\Script\MovingObject.cs" />

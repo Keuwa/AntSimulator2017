@@ -1,0 +1,11 @@
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.csproj.CoreCompileInputs.cache
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/bin/Debug/AntSimulator2017Abstract.dll
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/bin/Debug/AntSimulator2017Abstract.pdb
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.dll
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.pdb
+/Users/guillaumeChb/workspace/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.csproj.CoreCompileInputs.cache
+/Users/guillaumeChb/workspace/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.dll
+/Users/guillaumeChb/workspace/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.pdb
+/Users/guillaumeChb/workspace/AntSimulator2017/AntSimulator2017Abstract/bin/Debug/AntSimulator2017Abstract.dll
+/Users/guillaumeChb/workspace/AntSimulator2017/AntSimulator2017Abstract/bin/Debug/AntSimulator2017Abstract.pdb
+/Users/Vincent/Documents/Pro/Cours/Csharp designPattern/AntSimulator2017/AntSimulator2017Abstract/obj/Debug/AntSimulator2017Abstract.csprojResolveAssemblyReference.cache

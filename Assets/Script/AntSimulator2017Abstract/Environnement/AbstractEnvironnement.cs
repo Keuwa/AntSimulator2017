@@ -8,6 +8,8 @@ namespace AntSimulator2017Abstract.Environnement
 {
     public abstract class AbstractEnvironnement:AbstractObservable
     {
+		public abstract void Armagedon();
+		public abstract void AcidRain ();
         //public List<Character.Character> Characters { get; set; }
         public List<AbstractHeadQuarter> HeadQuarters { get; set; }
         public AbstractMap Map { get; set; }

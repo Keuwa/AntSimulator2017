@@ -1,16 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
 using AntSimulator2017Abstract;
 using AntSimulator2017Abstract.Environnement;
 using AntSimulator2017Concrete.Environnement.Map;
 using AntSimulator2017Concrete.item;
+using AntSimulator2017Concrete.Character;
+using UnityEngine;
 
 namespace AntSimulator2017Concrete.Environnement
 {
     public class AntEnvironnement : AbstractEnvironnement
     {
+
+		override public void Armagedon(){
+			this.notify ("armagedon");
+		}
+
+		override public void AcidRain(){
+			this.notify ("acidrain");
+		}
+
+		override public void notify(System.Object obj){
+			foreach (var ant in HeadQuarters[0].ObserverList) {
+				ant.update (this, obj);
+			}
+		}
+
         override public String Draw()
         {
-            Position pos = new Position(0, 0);
             System.Collections.Generic.List<AbstractObserver> temp = new System.Collections.Generic.List<AbstractObserver>();
 
             foreach(var obs in HeadQuarters[0].ObserverList){

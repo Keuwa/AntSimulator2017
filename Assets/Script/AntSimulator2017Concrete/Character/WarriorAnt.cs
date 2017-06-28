@@ -17,10 +17,5 @@ namespace AntSimulator2017Concrete.Character
         {
             throw new NotImplementedException();
         }
-
-        public override void update(AbstractObservable src, object data)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

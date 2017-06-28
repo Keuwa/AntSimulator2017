@@ -19,6 +19,18 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+	public void OnClickArmagedon(){
+		AntSimulator2017Concrete.Simulation.AntSimulation simulation = AntSimulator2017Concrete.Simulation.AntSimulation.Instance as AntSimulator2017Concrete.Simulation.AntSimulation;
+		simulation.Environnement.Armagedon ();
+		//Debug.Log ("hello : ");
+	}
+
+	public void OnClickAcidRain(){
+		AntSimulator2017Concrete.Simulation.AntSimulation simulation = AntSimulator2017Concrete.Simulation.AntSimulation.Instance as AntSimulator2017Concrete.Simulation.AntSimulation;
+		simulation.Environnement.AcidRain ();
+		///Debug.Log ("helloAcid");
+
+	}
 	public void OnClickSimulate()
 	{
 		if (enumerator != null) {
@@ -56,8 +68,9 @@ public class GameManager : MonoBehaviour {
 					boardScript.AddAnt((hill.ObserverList[i] as Ant).position);
 				}
 			}
-
-			yield return new WaitForSeconds(0.5f);
+			Ant ant1 = (AntSimulator2017Concrete.Simulation.AntSimulation.Instance.Environnement.HeadQuarters[0] as AntHill).ObserverList[0] as Ant;
+			//Debug.Log ("LP : " + ant1.lifePoint);
+			yield return new WaitForSeconds(0.2f);
 		}
 	}
 

@@ -14,10 +14,10 @@ public class StatsController : MonoBehaviour {
 		AntSimulation simulation = AntSimulation.Instance as AntSimulation ;
 
 		GameObject.Find ("Turn").GetComponent<Text> ().text = "Nombre de tours : " + simulation.NumberOfTurn;
+		GameObject.Find ("Ants").GetComponent<Text> ().text = "Nombre de fourmis : " + simulation.Environnement.HeadQuarters [0].ObserverList.Count;
 		GameObject.Find ("DeathThisTurn").GetComponent<Text> ().text = "Morts ce tour : " + simulation.NumberOfDeathThisTurn;
 		GameObject.Find ("Death").GetComponent<Text> ().text = "Morts total : " + simulation.NumberOfDeathTotal;
 
-		/*obj.GetComponent<GUIText>().text = "Turn: " + simulation.NumberOfTurn + "\n Number of death : " + simulation.NumberOfDeathTotal;*/
 	}
 
 }

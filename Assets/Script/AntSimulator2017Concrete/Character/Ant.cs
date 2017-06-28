@@ -6,6 +6,7 @@ using AntSimulator2017Abstract.Item;
 using AntSimulator2017Concrete.Environnement.Map;
 using AntSimulator2017Concrete.HQ;
 using AntSimulator2017Concrete.item;
+using UnityEngine;
 
 namespace AntSimulator2017Concrete.Character
 {
@@ -54,6 +55,22 @@ namespace AntSimulator2017Concrete.Character
             }
         }
 
-
+		public override void update (AntSimulator2017Abstract.AbstractObservable src, object data)
+		{
+			Debug.Log ("update");
+			switch (data as String) {
+				case "armagedon":
+					Debug.Log("arma");
+					lifePoint = 0;
+					break;
+				case "acidrain":
+					Debug.Log ("acid");
+					lifePoint--;
+					break;
+				default:
+					Debug.Log ("def");
+					break;
+				}
+		}
     }
 }

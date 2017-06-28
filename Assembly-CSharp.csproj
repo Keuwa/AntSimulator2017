@@ -145,9 +145,7 @@
      <Compile Include="Assets\_Complete-Game\Scripts\Player.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\SoundManager.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Wall.cs" />
-     <None Include="Assets\Script\AntSimulator2017Abstract\obj\Debug\AntSimulator2017Abstract.csproj.FileListAbsolute.txt" />
      <None Include="Assets\Backyard - Free\Readme.txt" />
-     <None Include="Assets\Script\AntSimulator2017Concrete\obj\Debug\AntSimulator2017Concrete.csproj.FileListAbsolute.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
